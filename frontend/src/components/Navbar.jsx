@@ -9,7 +9,7 @@ import { IoMoonOutline } from "react-icons/io5";
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Container maxW={"1140"} px={"4"}>
+    <Container maxW={"1140"} px={"3"} >
       <Flex
         h={"16"}
         alignItems={"center"}
@@ -20,7 +20,7 @@ export const Navbar = () => {
         }}
       >
         <Text>
-          <Link to="/">Product Store</Link>
+          <Link to="/">Product Store 🛒</Link>
         </Text>
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
@@ -33,7 +33,6 @@ export const Navbar = () => {
           </Button>
         </HStack>
       </Flex>
-      Navbar
     </Container>
   );
 };
